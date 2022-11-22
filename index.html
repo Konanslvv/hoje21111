@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <style>
+      
+      body{
+        background-color: rgb(228, 228, 228);
+      }
+      h2{
+        text-align: center;
+      }
+      #carousel{
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        #carousel .carousel-caption {
+            bottom: 3em;
+        }
+        #carousel .carousel-caption h5 {
+            font-size: 2.5em;
+            text-shadow: #000000 2px 2px;
+        }
+        #carousel .carousel-item{
+            height: 10%;
+        }
+        #carousel img{
+            display: flex;
+            height: 30em;
+            object-fit: cover;
+        }
+        .b1{
+            height: 550px;
+        }
+
+        @media screen and (max-width:768px){
+        }
+        .cards{
+          
+          width: 280px;
+        }
+    </style>
+
+
+
+
+<body>
+   <head>
+      <nav class="navbar navbar-expand-lg" style="background-color: #ff0000;">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="./img/MACQUEEN.jpg" alt="Bootstrap" width="130px" height="130px">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+   </head>
+
+   <!-- Carrosel -->
+
+   <div id="carousel" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/lightning-mcqueen.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/macqueencarr.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/maqueencarr3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Cards -->
+  <h2>
+    Produtos em destaque
+  </h2>
+
+  <section class="container my-5">
+    <div class="col">
+      <div class="card mx-auto">
+        <img src="./img/pngwing.com (9).png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Toyota Fortuner Mini</h5>
+      <p class="card-text">R$250.00,00</p>
+        <a href="#" class="btn btn-outline-primary">Comprar</a>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="row row-cols-1 row-cols-md-3 g-2">
+      <div class="col">
+        <div class="card mx-auto">
+          <img src="./img/pngwing.com (2).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ferrari 458 Itália</h5>
+          <p class="card-text">R$740.00,00</p>
+            <a href="#" class="btn btn-outline-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+          <div class="card mx-auto">
+            <img src="./img/pngwing.com (3).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bugatti Veyron</h5>
+            <p class="card-text">R$350.00,00</p>
+            <a href="#" class="btn btn-outline-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+          <div class="card mx-auto">
+            <img src="./img/pngwing.com (7).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ford Mustang Classic</h5>
+          <p class="card-text">R$650.00,00</p>
+            <a href="#" class="btn btn-outline-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+<!-- Cards Principais  -->
+<h2>
+  Principais Ofertas
+</h2>
+<section class="container my-5">
+<div class="card-group">
+  <div class="card">
+    <img src="./img/pngwing.com (11).png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a href="#" class="btn btn-primary" style="margin-top: 95px;">Ver Valores ></a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="./img/pngwing.com (8)_resized.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a href="#" class="btn btn-primary" style="margin-top: 95px;">Ver Valores ></a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="./img/pngwing.com (12)_resized.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a href="#" class="btn btn-primary" style="margin-top: 80px;">Ver Valores ></a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="./img/pngwing.com (13)_resized_cropped.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a href="#" class="btn btn-primary" style="margin-top: 50px;">Ver Valores ></a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="./img/pngwing.com (14).png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a href="#" class="btn btn-primary" style="margin-top: 50px;">Ver Valores ></a>
+    </div>
+  </div>
+</div>
+</section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
